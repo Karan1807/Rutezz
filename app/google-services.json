@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "836579303854",
+    "project_id": "rutezz",
+    "storage_bucket": "rutezz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836579303854:android:7fa3ee344f746bc578683f",
+        "android_client_info": {
+          "package_name": "com.example.rutezz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836579303854-nmi82rft25td9nf0so0vqqepq3eldgk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rutezz",
+            "certificate_hash": "9875779df3016f7f644a0e61746ed705f0208135"
+          }
+        },
+        {
+          "client_id": "836579303854-mce23otu90s8q4m4t8tkth3jf0pak5d2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2OKdbRe1sLv_TUYwSiHHSNa2-vIux9r8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836579303854-mce23otu90s8q4m4t8tkth3jf0pak5d2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

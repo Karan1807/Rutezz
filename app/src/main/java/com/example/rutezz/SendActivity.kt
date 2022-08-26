@@ -61,8 +61,9 @@ class SendActivity : AppCompatActivity() {
             if(data_recieved=="Success"){
                 val sharedPreferences = getSharedPreferences("user_data", Context.MODE_PRIVATE)
                 var b = sharedPreferences.getString("balance","")
-                if (b != null) {
-                    b = (b.toInt() - 200).toString()
+                var a = sharedPreferences.getString("amount","")
+                if (b != null && a!= null) {
+                    b = (b.toInt() - a.toInt()).toString()
                 }
                 val editor: SharedPreferences.Editor= sharedPreferences.edit()
                 editor.putString("balance", b)

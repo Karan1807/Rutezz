@@ -9,6 +9,7 @@ import android.net.wifi.WifiManager
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.common.api.ResolvableApiException
@@ -35,11 +36,13 @@ class MainActivity : AppCompatActivity() {
         val bt_send = findViewById<Button>(R.id.button_send)
         val bt_receive = findViewById<Button>(R.id.button_receive)
         val balance = findViewById<TextView>(R.id.balance)
+        val amount = findViewById<EditText>(R.id.amount)
         val sharedPreferences = getSharedPreferences("user_data", Context.MODE_PRIVATE)
         val editor: SharedPreferences.Editor= sharedPreferences.edit()
         if(!sharedPreferences.getBoolean("updateb_once",false)) {
             editor.putBoolean("updateb_once", true)
             editor.putString("balance", "2000")
+            editor.putString("amount",amount.toString())
             editor.commit()
         }
         balance.text = sharedPreferences.getString("balance","0")
